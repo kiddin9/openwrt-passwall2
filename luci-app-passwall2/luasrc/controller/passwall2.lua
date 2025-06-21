@@ -79,6 +79,7 @@ function index()
 	entry({"admin", "services", appname, "update_rules"}, call("update_rules")).leaf = true
 	entry({"admin", "services", appname, "subscribe_del_node"}, call("subscribe_del_node")).leaf = true
 	entry({"admin", "services", appname, "subscribe_del_all"}, call("subscribe_del_all")).leaf = true
+	entry({"admin", "services", appname, "ip"}, call('check_ip')).leaf = true
 
 	--[[Components update]]
 	entry({"admin", "services", appname, "check_passwall2"}, call("app_check")).leaf = true
